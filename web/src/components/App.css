@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'), url(../fonts/Gilroy.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Pristina';
+  src: local('Pristina'), url(../fonts/Pristina.ttf) format('truetype');
+}
+
+
+
+
+* {
+  padding: 0; margin: 0; 
+  user-select: none; box-sizing: border-box;
+}
+
+.nui-wrapper {
+  position: absolute; display: flex;
+  width: 100%; height: 100%;
+  align-items: center; justify-content: center;
+}
+
+.popup-thing {
+  background: linear-gradient(118.08deg, #010610 4.7%, #030510 100.47%);
+  border-radius: 10px;
+  width: 31vw;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.InsideContainer{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 95%;
+  width: 85%;
+  border: 0.13vw solid rgba(255, 255, 255, 0.17);
+  border-radius: 1rem;
+  
+  flex-direction: column;
+}
+
+
+
+.CreateInside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5vw;
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.1vw;
+  font-family: Gilroy;
+  font-weight: 800;
+  color : #9EA4AF;
+  font-size: calc(17px + 0.4vw);
+  height: 0%;
+  width: 100%;
+}
+
+
+.ContractActions {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+  width: 100%;
+}
+
+.ContractActions > button {
+  height: 2.3vw;
+  width: 80%;
+
+  color: #050C15;
+  background: #2EA080;
+
+  font-family: Gilroy;
+  font-size: calc(7px + 0.4vw);
+  font-weight: 800;
+
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.InputRows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.65vw;
+  height: 90%;
+  max-height: 80%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.InputRows > .Row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+  width: 80%;
+}
+
+.InputRows > .Row > p {
+  text-align: left;
+
+  font-family: Poppins;
+  color: #626262;
+  font-weight: 600;
+
+  font-size: calc(4px + 0.4vw);
+}
+
+.Input {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.7vw;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Poppins;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding-left: 1.0vw;
+  
+  width: 100%;
+}
+
+.Textarea {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.5vw;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff91;
+
+  font-family: Poppins;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding-left: 1.0vw;
+  resize: none;
+  width: 100%;
+
+  font-size: calc(4px + 0.4vw);
+  padding-top: 0.6vw;
+}
+
+.IconInput {
+  position: absolute;
+  margin-left: 1vw;
+  height: 1.5vh;
+}
+
+.Users {
+
+  width: 100%;
+  max-height: 15vh;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding-left: 1vw;
+  padding-top: 0.8vw;
+  font-size: calc(7px + 0.4vw);
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.UsersList {
+  display: grid;
+  gap: 0vw;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.5vw;
+  overflow: auto;
+  padding-bottom: 1vw;
+}
+
+.User {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background: rgba(217, 217, 217, 0.09);
+  height: 3.5vh;
+  width: 9vw;
+  border-radius: 0.2rem;
+  padding-left: 0.5vw;
+  color: #9A9D9E;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: calc(5px + 0.4vw);
+
+  justify-content: space-between;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  width: calc(0.1px + 0.4vw);
+  height: 0.2vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #2EA080;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2EA080;
+}
+
+.ContractReceive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+
+  height: 100%;
+  width: 100%;
+
+  padding-bottom: 2vw;
+}
+
+.ContractDetails {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BDBCBC;
+  font-family: Poppins;
+  font-weight: 500;
+
+  font-size: calc(7px + 0.4vw);
+}
+
+.ContractSignatures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.Signature {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4vw;
+}
+
+.Row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.0vw;
+
+  width: 100%;
+
+  padding-top: 1vw;
+}
+
+
+.contractRow {
+  width: 80%;
+  min-height: 3.7vw;
+  background-color: #0E141D;
+  height: fit-content;
+  border: 0.1vw solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+
+.Expanded {
+  height: fit-content;
+  align-items:baseline;
+  border: 0.1vw solid #2EA080;
+  padding-bottom: 2vw;
+
+}
+
+
+.Expanded span p{
+  color: #2EA080 !important;
+}
+.ExpandedData {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  padding-left: 1vw;
+}
+
+.expandedRow{
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  gap: 0.5vw;
+  width: 10vw;
+  color: #9B9B9B;
+  font-family: Poppins;
+  font-size: calc(8px + 0.4vw);
+  height: 2.2vw;
+  border-radius: 0.2rem;
+  background-color: #ffffff17;
+}
+
+.acceptdeclinebuttons {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 0.2vw;
+
+}
+
+.buttonAcceptOrDecline {
+  background-color: #d9d9d927;
+  height: 1.5vw;
+  font-size: calc(4px + 0.4vw);
+  width: 4.5vw;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
